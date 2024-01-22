@@ -1,0 +1,17 @@
+.body img{
+    width:400px;
+}
+
+#menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu h1{
+    padding-top: 50px;
+}
+
+#menu button{
+    margin-top: 20px;
+}
