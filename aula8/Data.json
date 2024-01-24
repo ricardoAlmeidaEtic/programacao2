@@ -1,0 +1,38 @@
+[
+    {
+        "type":"Car",
+        "brand":"Ferrari",
+        "speed":900,
+        "image": "images/red-ferrari-f12berlinetta-off-road.jpg"
+    },
+    {
+        "type":"Car",
+        "brand":"Fiat",
+        "speed":50,
+        "image": "images/fiat_500_convertible-wallpaper-2560x1440.jpg"
+    },
+    {
+        "type":"Motorcycle",
+        "brand":"Kawasaki",
+        "speed":600,
+        "image": "images/kawasaki-ninja-zx-10r-2019-4k.jpg"
+    },
+    {
+        "type":"Motorcycle",
+        "brand":"Ducatti",
+        "speed":600,
+        "image": "images/ducati_1098r_superbike-wallpaper-1920x1080.jpg"
+    },
+    {
+        "type":"Car",
+        "brand":"Renault",
+        "speed":50,
+        "image": "images/5fad63ab14cb8668d9cb335ce157d8a605d2c923.webp"
+    },
+    {
+        "type":"Boat",
+        "brand":"Titanic",
+        "speed":50,
+        "image": "images/titanic_4-wallpaper-1920x1080.jpg"
+    }
+]
