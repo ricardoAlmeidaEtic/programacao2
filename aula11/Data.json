@@ -1,0 +1,17 @@
+[
+    {
+        "type":"Motorcycle",
+        "name":"Kawasaki",
+        "numeLegs":600
+    },
+    {
+        "type":"Motorcycle",
+        "name":"Kawasaki",
+        "numeLegs":600
+    },
+    {
+        "type":"Motorcycle",
+        "name":"Kawasaki",
+        "isAgressive":true
+    }
+]
