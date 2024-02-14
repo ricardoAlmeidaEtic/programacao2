@@ -4,6 +4,7 @@ const galeria = new Gallery("Galeria");
 
 let mute = false;
 let pause = false;
+let limite = 0;
 
 const getData = async() =>{
     const request = await fetch("./Data.json");
@@ -14,9 +15,10 @@ const getData = async() =>{
 
 const loadData = (data,galeria) =>{
 
-    data.forEach(item => {
-        galeria.add(item);
-    });
+
+    for(i=0;i<limite;i++){
+        galeria.add(data[i]);
+    }
 
     console.log(galeria.peacesOfArt);
 }

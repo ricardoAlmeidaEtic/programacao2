@@ -29,6 +29,10 @@ export default class Gallery {
         this.peacesOfArt.push(nextPeace);
     }
 
+    remove(index){
+        this.peacesOfArt.splice(index,1);
+    }
+
     set peacesOfArt(peacesOfArt){
         this.peacesOfArt = peacesOfArt
     }
