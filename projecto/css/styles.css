@@ -1,0 +1,196 @@
+html{
+    font-family: 'Cute Font', sans-serif;
+}
+
+body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: silver;
+    color:#343a40;
+}
+
+.navbar h1{
+    font-size: 100px;
+    margin:-10px
+}
+
+.galeria{
+    height: 100%;
+    margin:10px;
+    padding: 50px;
+}
+
+.galeriaRow{
+    width: 80%;
+    margin-left:10%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.galeriaElemento{
+    border-radius: 10%;
+    width: 30%;
+    margin: 10px;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+
+.galeriaElemento img{
+    height: 200px;
+    margin-bottom: -10px;
+    cursor: pointer;
+}
+
+.galeriaElemento img:hover{
+    transform: translateZ(12px);
+  }
+
+#galeriaDisplay{
+    background-color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    display: none;
+}
+
+.galleryElementDescription{
+    margin-top: 500px;
+    background-color: white;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    z-index: 1;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.seta{
+    cursor: pointer;
+    margin: 85px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.seta:hover{
+    font-size: 60px !important;
+}
+
+/* OTHER */
+
+.room {
+    width: 80%;
+    height: 80%;
+    background-color: #fafaf8;
+    border: 2px solid #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wall {
+    width: 490px;
+    height: 40%;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -10px 12000px rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+}
+
+.diagonal-line {
+    position: absolute;
+    background-color: #333;
+    top:50%;
+}
+
+.top-left-line, .bottom-right-line {
+    width: 10000px;
+    height: 2px;
+    transform: rotate(31.6deg);
+    display: inline-block;
+}
+
+.top-right-line, .bottom-left-line {
+    width: 10000px;
+    height: 2px;
+    transform: rotate(-31.6deg);
+    display: inline-block;
+}
+
+figure {
+    margin:						1em auto;
+}
+
+.outerBevel { /* of frame */
+	box-shadow:				4px 6px 12px 0 black;
+	border-width:			5px;
+	border-style:			solid;
+	border-color:			rgb(109, 84, 58) rgb(24, 19, 13) rgb(24, 19, 13) rgb(109, 84, 58);
+}
+
+.outerBevel:hover{
+    box-shadow:				8px 12px 24px 0 goldenrod;
+}
+
+.flatSurface { /* of frame */
+	border:						12px solid rgb(65, 40, 16);
+}
+
+.innerBevel { /* of frame */
+	border-width:			5px;
+	border-style:			solid;
+	border-color:			rgb(24, 19, 13)	rgb(109, 84, 58) rgb(109, 84, 58) rgb(24, 19, 13);
+}
+
+.map { /* including mat and gold beveled edge of mat */
+	display:					block;
+	clear:						both;
+	height:						100%;
+	width:						100%;
+	padding:					7.5% 7.5% 10% 7.5%; /* Mat width */
+	background-color:	rgb(255,249,224); 	/* Mat color */
+	border-width:			3px;	/* Gold edge of mat */
+	border-style:			solid;
+	border-color:			rgb(207, 166, 0) rgb(207, 166, 0) rgb(145, 110, 0) rgb(145, 110, 0);
+}
+
+.left{
+    justify-content: left !important; 
+}
+
+.right{
+    justify-content: right !important;
+}
+
+.icon{
+    width:100px;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 12px;
+}
+
+ul{
+    padding-left: 0px;
+    margin:5px;
+}
