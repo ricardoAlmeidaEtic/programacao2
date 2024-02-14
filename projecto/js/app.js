@@ -4,7 +4,7 @@ const galeria = new Gallery("Galeria");
 
 let mute = false;
 let pause = false;
-let limite = 0;
+let limite = 5;
 
 const getData = async() =>{
     const request = await fetch("./Data.json");
@@ -15,12 +15,16 @@ const getData = async() =>{
 
 const loadData = (data,galeria) =>{
 
+    let i = 0;
+    
+    data.forEach(item => {
+        if(i === limite)
+            return
+        
+        galeria.add(item);
+        i++;
+    });
 
-    for(i=0;i<limite;i++){
-        galeria.add(data[i]);
-    }
-
-    console.log(galeria.peacesOfArt);
 }
 
 const showElement = (i) =>{
