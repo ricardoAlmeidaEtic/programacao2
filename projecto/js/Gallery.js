@@ -17,7 +17,7 @@ export default class Gallery {
             case "music":
                 nextPeace = new Music(peaceOfArt);
                 break;
-            case "paiting":
+            case "painting":
                 nextPeace = new Painting(peaceOfArt);
                 break;
             case "sculpture":

@@ -28,10 +28,11 @@ const showElement = (i) =>{
         galeriaDisplayElemento.style.display="flex";
         galeriaDisplayElemento.innerHTML = renderSlideShow(i, galeria.peacesOfArt[i])
         galeriaDisplayElemento.scrollIntoView();
+
         loadNextElementEvents(i)
         if(galeria.peacesOfArt[i].type === "music"){
             loadMusicElementEvents(i)
-        } else{
+        } else if(galeria.peacesOfArt[i].type === "painting"){
 
             /* SAMPLE CODE */
             let el = document.getElementById('display')
@@ -68,6 +69,10 @@ const showElement = (i) =>{
             /* SAMPLE CODE */
 
         }
+
+        document.getElementById('close').onclick = () =>{
+            document.getElementById('galeriaDisplay').style.removeProperty('display');
+        }
     }
 }
 
@@ -77,6 +82,7 @@ const loadGalleryEvents = (galeria) =>{
             showElement(i);
         }
     };
+
 }
 
 const loadNextElementEvents = (i) =>{
